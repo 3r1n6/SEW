@@ -1,0 +1,29 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package org.example;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+    Calculator calculator;
+
+    CalculatorTest() {
+    }
+
+    @BeforeEach
+    void setUp() {
+        this.calculator = new Calculator();
+    }
+
+    @Test
+    void add() {
+        Assertions.assertEquals(8, this.calculator.add(5, 3));
+        Assertions.assertNotEquals(8, this.calculator.add(5, 4));
+    }
+
+   }
