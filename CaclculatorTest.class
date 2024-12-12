@@ -31,5 +31,11 @@ class CalculatorTest {
         Assertions.assertNotEquals(5, this.calculator.subtract(10, 3));
     }
 
+    @Test
+    void multiply() {
+        Assertions.assertEquals(50, this.calculator.multiply(10, 5));
+        Assertions.assertNotEquals(45, this.calculator.multiply(10, 3));
+    }
+
 
    }
